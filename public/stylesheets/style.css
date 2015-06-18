@@ -91,9 +91,7 @@ body{
   width:100%;
   margin-bottom: 10px;
 }
-.u-form-group input[type="fn"],
-.u-form-group input[type="ln"],
-.u-form-group input[type="rn"],
+.u-form-group input[type="text"],
 .u-form-group input[type="password"]{
   width: calc(50% - 22px);
   height:45px;
@@ -110,7 +108,8 @@ body{
 .u-form-group input:focus{
   border-color: #358efb;
 }
-.u-form-group button{
+.u-form-group #signin,#signup
+{
   width:50%;
   background-color: #1CB94E;
   border: none;

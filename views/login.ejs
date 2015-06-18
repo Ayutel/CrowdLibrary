@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= title %></title>
+    <title><%=title%></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -15,30 +15,32 @@
         <a href="#" class="active" id="login-box-link">Login</a>
         <a href="#" id="signup-box-link">Sign Up</a>
     </div>
-    <form class="email-login">
+    <form class="email-login" method="POST" action="login/submit.html">
         <div class="u-form-group">
-            <input type="rn" placeholder="Roll Number"/>
+            <input name="rn" type="text" placeholder="Roll Number"/>
         </div>
         <div class="u-form-group">
-            <input type="password" placeholder="Password"/>
+            <input name="pw" type="password" placeholder="Password"/>
         </div>
+
         <div class="u-form-group">
-            <button id="signin">Log in</button>
+            <input id="signin" type="submit" value="Login">
         </div>
         <div class="u-form-group">
             <a href="#" class="forgot-password">Forgot password?</a>
         </div>
+
     </form>
 
-    <form class="email-signup" method="POST" action="/register">
+    <form class="email-signup" method="POST" action="register">
         <div class="u-form-group">
-            <input type="rn" placeholder="Roll Number"/>
+            <input type="text" placeholder="Roll Number"/>
         </div>
         <div class="u-form-group">
-            <input type="fn" placeholder="First Name"/>
+            <input type="text" placeholder="First Name"/>
         </div>
         <div class="u-form-group">
-            <input type="ln" placeholder="Last Name"/>
+            <input type="text" placeholder="Last Name"/>
         </div>
         <div class="u-form-group">
             <input type="password" placeholder="Password"/>
