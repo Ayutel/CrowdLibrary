@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
     res.render('login', { title: 'library login' });
 });
 
-router.post('/submit.html',function(req,res,next)
+router.post('/submit',function(req,res,next)
 {
     console.log("something works");
     var client = new pg.Client(connectionString);
@@ -47,6 +47,35 @@ router.post('/submit.html',function(req,res,next)
                     //res.send("testing");
                 }
             });
+        }
+    });
+});
+router.post('/register',function(req,res,next)
+{
+    console.log("something else works");
+    var client = new pg.Client(connectionString);
+    client.connect(function(err,client,done)
+    {
+        if(err)
+        {
+            console.log('Client connection error',err);
+            res.send('Database error');
+        }
+        else
+        {
+            client.query("INSERT INTO user_info(user_name,first_name,last_name,password) values($1, $2, $3, $4)", [req.body.rn, req.body.firstname, req.body.lastname,req.body.pw]);
+            {
+                if(err)
+                {
+                    res.send('Database error');
+                }
+                else
+                {
+                    console.log("something else works again ");
+                    res.send('Hey sexy');
+                 }
+            }
+
         }
     });
 });

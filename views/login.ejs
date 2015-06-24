@@ -15,7 +15,7 @@
         <a href="#" class="active" id="login-box-link">Login</a>
         <a href="#" id="signup-box-link">Sign Up</a>
     </div>
-    <form class="email-login" method="POST" action="login/submit.html">
+    <form class="email-login" method="POST" action="login/submit">
         <div class="u-form-group">
             <input name="rn" type="text" placeholder="Roll Number"/>
         </div>
@@ -32,24 +32,24 @@
 
     </form>
 
-    <form class="email-signup" method="POST" action="register">
+    <form class="email-signup" method="POST" action="login/register">
         <div class="u-form-group">
-            <input type="text" placeholder="Roll Number"/>
+            <input name="rn" type="text" placeholder="Roll Number"/>
         </div>
         <div class="u-form-group">
-            <input type="text" placeholder="First Name"/>
+            <input name="firstname" type="text" placeholder="First Name"/>
         </div>
         <div class="u-form-group">
-            <input type="text" placeholder="Last Name"/>
+            <input name="lastname" type="text" placeholder="Last Name"/>
         </div>
         <div class="u-form-group">
-            <input type="password" placeholder="Password"/>
+            <input name="pw" type="password" placeholder="Password"/>
         </div>
         <div class="u-form-group">
-            <input type="password" placeholder="Confirm Password"/>
+            <input name="pw" type="password" placeholder="Confirm Password"/>
         </div>
         <div class="u-form-group">
-            <button id="signup">Sign Up</button>
+            <input id="signup" type="submit" value="Sign Up">
         </div>
     </form>
 </div>
