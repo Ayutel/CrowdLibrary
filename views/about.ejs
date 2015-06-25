@@ -3,46 +3,9 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <style type="text/css">
-        .htmlClass{
-            padding:8px;
-            border:1px solid blue;
-            margin-bottom:8px;
-        }
-    </style>
-
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-<h1>jQuery html() example</h1>
-
-<div class="htmlClass">I'm going to replate by something ....</div>
-
-<div class="htmlClass">I'm going to replate by something 2....</div>
-
-<p>
-    <button id="getHtml">html()</button>
-    <button id="setHtml">html('xxx')</button>
-    <button id="reset">reset</button>
-</p>
-
-<script type="text/javascript">
-
-    $("#getHtml").click(function () {
-
-        alert($('.htmlClass').html());
-
-    });
-
-    $("#setHtml").click(function () {
-
-        $('.htmlClass').html('<b>This is a new text</b>');
-
-    });
-
-    $("#reset").click(function () {
-        location.reload();
-    });
-
-</script>
+    <h1>About Us</h1>
 </body>
 </html>
