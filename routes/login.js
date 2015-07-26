@@ -33,7 +33,7 @@ router.post('/submit',function(req,res,next)
                         var importantRow = result.rows[0];
                         if(importantRow.user_name==req.body.rn && importantRow.password==req.body.pw)
                         {
-                            res.send('You have logged in successfully');
+                            res.render('index', { title: 'Home' });
                         }
                         else
                         {

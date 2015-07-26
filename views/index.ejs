@@ -2,10 +2,52 @@
 <html>
   <head>
     <title>CROWDSOURCED LIBRARY homepage</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <style>
+          .wrapper{
+             width:1000px;
+              min-height: 550px;
+              margin:0px auto;
+              padding: 20px;
+            background-color: rgba(255,255,255,0.8);
+
+          }
+         #body {
+              margin:0;
+              padding:0;
+              background-image:  url("http://farm6.static.flickr.com/5051/5496507286_0dfd267fc0.jpg");
+                overflow: auto;
+
+          }
+
+
+      </style>
   </head>
- <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+ <body id="body">
+    <% include templates/header.ejs %>
+    <div class="wrapper">
+        <div id="wrappertext">
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+        <br>
+        <button type="button" class="btn btn-success">Share a book and help us grow!</button>
+        <br>
+        <br>
+
+        <div class="list-group">
+            <a href="#" class="list-group-item disabled">
+                <h3>List of available books</h3>
+            </a>
+            <a href="/book" class="list-group-item">The Fault In Our Stars</a>
+            <a href="/book" class="list-group-item">Divergent</a>
+            <a href="/book" class="list-group-item">Insurgent</a>
+            <a href="#" class="list-group-item">The Book Thief</a>
+            <a href="#" class="list-group-item">The Fault In Our Stars</a>
+            <a href="#" class="list-group-item">Divergent</a>
+            <a href="#" class="list-group-item">Insurgent</a>
+            <a href="#" class="list-group-item">The Book Thief</a>
+        </div>
+            </div>
+    </div>
+
   </body>
 </html>

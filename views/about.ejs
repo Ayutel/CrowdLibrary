@@ -9,21 +9,31 @@
             border:1px solid blue;
             margin-bottom:8px;
         }
+
+         .wrapper{
+             width:960px;
+             margin:0 auto;
+             background-image: url("img_tree.gif"), url("img_flwr.gif");
+         }
+
     </style>
 
 </head>
 <body>
-<h1>jQuery html() example</h1>
+<% include templates/header.ejs %>
+<div class="wrapper">
+    <h1>jQuery html() example</h1>
 
-<div class="htmlClass">I'm going to replate by something ....</div>
+    <div class="htmlClass">I'm going to replace by something ....</div>
 
-<div class="htmlClass">I'm going to replate by something 2....</div>
+    <div class="htmlClass">I'm going to replace by something 2....</div>
 
-<p>
-    <button id="getHtml">html()</button>
-    <button id="setHtml">html('xxx')</button>
-    <button id="reset">reset</button>
-</p>
+    <p>
+        <button id="getHtml">html()</button>
+        <button id="setHtml">html('xxx')</button>
+         <button id="reset">reset</button>
+    </p>
+</div>
 
 <script type="text/javascript">
 

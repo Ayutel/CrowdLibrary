@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOK</title>
+    <style>
+        .wrapper{
+            width:1000px;
+            min-height: 550px;
+            margin:0px auto;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.8);
+
+        }
+        #body {
+            margin:0;
+            padding:0;
+            background-image:  url("http://farm6.static.flickr.com/5051/5496507286_0dfd267fc0.jpg");
+            overflow: auto;
+
+        }
+
+
+    </style>
+</head>
+<body id="body">
+<% include templates/header.ejs %>
+<div class="wrapper">
+
+        <h1>Details of xyz book!</h1>
+        <p>You clicked on (add using javascript) book!</p>
+        <br>
+
+        <br>
+
+        <div class="list-group">
+            <a href="#" class="list-group-item disabled">
+                <h3>Book details</h3>
+            </a>
+            <a href="#" class="list-group-item">blah</a>
+            <a href="#" class="list-group-item">blah</a>
+            <a href="#" class="list-group-item">blah</a>
+
+        </div>
+        <button type="button" class="btn btn-success">Request owner for book</button>
+        <br>
+
+</div>
+
+</body>
+</html>
