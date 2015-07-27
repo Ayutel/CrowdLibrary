@@ -5,7 +5,7 @@
       <style>
           .wrapper{
              width:1000px;
-              min-height: 550px;
+              min-height: 500px;
               margin:0px auto;
               padding: 20px;
             background-color: rgba(255,255,255,0.8);
@@ -16,6 +16,7 @@
               padding:0;
               background-image:  url("http://farm6.static.flickr.com/5051/5496507286_0dfd267fc0.jpg");
                 overflow: auto;
+             text-decoration: none;
 
           }
 
@@ -29,7 +30,7 @@
         <h1><%= title %></h1>
         <p>Welcome to <%= title %></p>
         <br>
-        <button type="button" class="btn btn-success">Share a book and help us grow!</button>
+        <button type="button" onclick="location.href='/share';" class="btn btn-success"> Share a book!</button>
         <br>
         <br>
 
@@ -40,11 +41,7 @@
             <a href="/book" class="list-group-item">The Fault In Our Stars</a>
             <a href="/book" class="list-group-item">Divergent</a>
             <a href="/book" class="list-group-item">Insurgent</a>
-            <a href="#" class="list-group-item">The Book Thief</a>
-            <a href="#" class="list-group-item">The Fault In Our Stars</a>
-            <a href="#" class="list-group-item">Divergent</a>
-            <a href="#" class="list-group-item">Insurgent</a>
-            <a href="#" class="list-group-item">The Book Thief</a>
+
         </div>
             </div>
     </div>
