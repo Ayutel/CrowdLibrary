@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83e764da-b554-43a9-bd8f-85e1876ad8d5" name="Default" comment="again with Backend">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/share.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/share.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/book.ejs" afterPath="$PROJECT_DIR$/views/book.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="83e764da-b554-43a9-bd8f-85e1876ad8d5" name="Default" comment="again with Backend" />
     <ignored path="CrowdLibrary.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
